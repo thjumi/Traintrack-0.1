@@ -45,7 +45,6 @@ Route::middleware('auth')->group(function () {
         Route::delete('/', [ProfileController::class, 'destroy'])->name('profile.destroy');
     });
 
-    // Recursos con acceso general
     Route::resources([
         'seguimientos' => SeguimientoController::class,
         'rutinas' => RutinaController::class,
